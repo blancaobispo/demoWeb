@@ -1,0 +1,110 @@
+<html>
+<head>
+
+<title> MORAT </title>
+<link href="estilosweb.css" rel="stylesheet" type="text/css">
+<Script Language="JavaScript">
+function DameLaFechaHora() {
+  	var hora = new Date()
+  	var hrs = hora.getHours();
+  	var min = hora.getMinutes();
+  	var hoy = new Date();
+  	var m = new Array();
+  	var d = new Array()
+  	var an= hoy.getYear();
+  	m[0]="Enero";  m[1]="Febrero";  m[2]="Marzo";
+  	m[3]="Abril";   m[4]="Mayo";  m[5]="Junio";
+  	m[6]="Julio";	m[7]="Agosto";   m[8]="Septiembre";
+  	m[9]="Octubre";   m[10]="Noviembre"; m[11]="Diciembre";
+	
+	if (min<10){
+  	document.write("Son las "+hrs+":0"+min+" (");
+  	document.write(hoy.getDate());
+  	document.write(" de ");
+  	document.write(m[hoy.getMonth()]);
+  	document.write(")");
+	}
+	
+	else{
+		document.write("Son las "+hrs+":"+min+" (");
+  	document.write(hoy.getDate());
+  	document.write(" de ");
+  	document.write(m[hoy.getMonth()]);
+  	document.write(")");
+	}
+	
+	}
+</Script>
+
+</head>
+<body>
+
+<img src="https://www.entradas.com/obj/media/ES-eventim/galery/kuenstler/m/Morat5.jpg" width="1325" height="800">
+
+<img src="gradiente.jpg">
+<a href="pagina3.html" class="indice4"> Pedidos </a>
+<a href="pagina2.html" class="indice3"> Redes sociales </a>
+<a href="pagina1.html" class="indice2"> Canciones </a>
+<a href="index.html" class="indice1"> Inicio </a>
+
+<br><br><br><br>
+<h1> Trámites </h1>
+
+<fieldset>
+	<legend><h2> Realice su pedido </h2></legend>
+
+	<p> Productos </p>
+	<p> <input type="checkbox" name="casilla"> Mochilas </p>
+	<p> <input type="checkbox" name="casilla"> Discos </p>
+	<p> <input type="checkbox" name="casilla"> Camisetas </p>
+	<p> <input type="checkbox" name="casilla"> Libros </p>
+	<br>
+	
+
+</fieldset>
+
+
+
+<fieldset>
+
+	<legend><h2> Datos de entrega </h2></legend>
+
+	<p> Nombre: <input type="text" name="nombre"> </p>
+	<p> Dirección: <input type="text" name="nombre"> </p>
+	<p> Teléfono: <input type="text" name="nombre"> </p>
+	
+</fieldset>
+
+<fieldset>
+	<legend><h2> Método de pago </h2></legend>
+	<select name="menu">
+		<option> Efectivo </option>
+		<option> Tarjeta </option>
+	</select>
+</fieldset>
+<br>
+<input type="reset" value="OK">  
+
+</form>
+
+
+</div>
+</div>
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+
+<hr>
+
+<br>
+
+<center>
+<h2 class="hora">
+<script>
+DameLaFechaHora();
+</script>
+</h2>
+</center>
+
+</body>
+</html>

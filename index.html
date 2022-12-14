@@ -1,0 +1,84 @@
+<html>
+<head>
+
+<title> MORAT </title>
+<link href="estilosweb.css" rel="stylesheet" type="text/css">
+<Script Language="JavaScript">
+	function DameLaFechaHora() {
+  	var hora = new Date()
+  	var hrs = hora.getHours();
+  	var min = hora.getMinutes();
+  	var hoy = new Date();
+  	var m = new Array();
+  	var d = new Array()
+  	var an= hoy.getYear();
+  	m[0]="Enero";  m[1]="Febrero";  m[2]="Marzo";
+  	m[3]="Abril";   m[4]="Mayo";  m[5]="Junio";
+  	m[6]="Julio";	m[7]="Agosto";   m[8]="Septiembre";
+  	m[9]="Octubre";   m[10]="Noviembre"; m[11]="Diciembre";
+	
+	if (min<10){
+  	document.write("Son las "+hrs+":0"+min+" (");
+  	document.write(hoy.getDate());
+  	document.write(" de ");
+  	document.write(m[hoy.getMonth()]);
+  	document.write(")");
+	}
+	
+	else{
+		document.write("Son las "+hrs+":"+min+" (");
+  	document.write(hoy.getDate());
+  	document.write(" de ");
+  	document.write(m[hoy.getMonth()]);
+  	document.write(")");
+	}
+	
+	}
+</Script>
+
+</head>
+<body>
+
+<img src="https://www.entradas.com/obj/media/ES-eventim/galery/kuenstler/m/Morat5.jpg" width="1325" height="800">
+
+<img src="gradiente.jpg">
+<a href="pagina3.html" class="indice4"> Pedidos </a>
+<a href="pagina2.html" class="indice3"> Redes sociales </a>
+<a href="pagina1.html" class="indice2"> Canciones </a>
+<a href="index.html" class="indice1"> Inicio </a>
+
+<br><br><br><br>
+
+<center>
+<h1> MORAT </h1>
+<h2 class="titulo_lamina"> ¿Quiénes son?
+ Morat es una banda colombiana de pop latino formada originalmente en Bogotá en 2011. Se dieron a conocer en 2015 con su éxito Mi nuevo vicio. Sus integrantes son Juan Pablo Isaza Piñeros, Juan Pablo Villamil Cortés, Simón Vargas Morales y Martín Vargas Morales. Hasta finales de 2016 había formado parte de la banda Alejandro Posada Carrasco, pero decidió abandonar el grupo, por lo que fue sustituido por Martín Vargas ese mismo año.</h2>
+<img src="https://akamai.sscdn.co/uploadfile/letras/fotos/a/1/1/7/a11750e4abcbf07109b386364cc190f7.jpg" width="876.05" height="656.95">
+</center>
+
+<br><br><br>
+<hr>
+
+
+
+
+</div>
+</div>
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+
+<hr>
+
+<br>
+
+<center>
+<h2 class="hora">
+<script>
+DameLaFechaHora();
+</script>
+</h2>
+</center>
+
+</body>
+</html>

@@ -1,0 +1,81 @@
+<html>
+<head>
+
+<title> MORAT </title>
+<link href="estilosweb.css" rel="stylesheet" type="text/css">
+<Script Language="JavaScript">
+	function DameLaFechaHora() {
+  	var hora = new Date()
+  	var hrs = hora.getHours();
+  	var min = hora.getMinutes();
+  	var hoy = new Date();
+  	var m = new Array();
+  	var d = new Array()
+  	var an= hoy.getYear();
+  	m[0]="Enero";  m[1]="Febrero";  m[2]="Marzo";
+  	m[3]="Abril";   m[4]="Mayo";  m[5]="Junio";
+  	m[6]="Julio";	m[7]="Agosto";   m[8]="Septiembre";
+  	m[9]="Octubre";   m[10]="Noviembre"; m[11]="Diciembre";
+	
+	if (min<10){
+  	document.write("Son las "+hrs+":0"+min+" (");
+  	document.write(hoy.getDate());
+  	document.write(" de ");
+  	document.write(m[hoy.getMonth()]);
+  	document.write(")");
+	}
+	
+	else{
+		document.write("Son las "+hrs+":"+min+" (");
+  	document.write(hoy.getDate());
+  	document.write(" de ");
+  	document.write(m[hoy.getMonth()]);
+  	document.write(")");
+	}
+	
+	}
+</Script>
+</Script>
+
+</head>
+<body>
+
+<img src="https://www.entradas.com/obj/media/ES-eventim/galery/kuenstler/m/Morat5.jpg" width="1325" height="800">
+
+<img src="gradiente.jpg">
+<a href="pagina3.html" class="indice4"> Pedidos </a>
+<a href="pagina2.html" class="indice3"> Redes sociales </a>
+<a href="pagina1.html" class="indice2"> Canciones </a>
+<a href="index.html" class="indice1"> Inicio </a>
+
+<br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<h1> Redes sociales </h1>
+<div class="caja">
+<div class="redes">
+<h2> Instagram oficial: <a href="https://www.instagram.com/morat/">@morat</a> </h2>
+<img src="https://c8.alamy.com/compes/prwgw1/icono-de-social-media-instagram-vector-plantilla-de-diseno-prwgw1.jpg" width="40" height="40">
+<h2> Instagram club de fans : <a href="https://www.instagram.com/fcmoratesp/">@morat_barcelona</a> </h2>
+<img src="https://c8.alamy.com/compes/prwgw1/icono-de-social-media-instagram-vector-plantilla-de-diseno-prwgw1.jpg" width="40" height="40">
+<h2> Youtube oficial: <a href="https://www.youtube.com/@MoratOficial">@MoratOficial</a> </h2>
+<img src="https://i.pinimg.com/originals/a2/10/91/a21091a03222436a724e5105acf32349.png" width="40" height="40">
+</div>
+</div>
+</div>
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br>
+
+<center>
+<h2 class="hora">
+<script>
+DameLaFechaHora();
+</script>
+</h2>
+</center>
+
+</body>
+</html>
